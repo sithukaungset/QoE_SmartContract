@@ -1,0 +1,89 @@
+doctype html
+html
+ head
+  title QOE Accelerator
+  style.
+    Body {
+
+    background-image:
+    url('https://ipfs.nftshowroom.com/ipfs/QmW2XbSiVmktxDwNYfcFBGiqXYw4hSuM7VmLjHyR8o5Nci');
+    background-size: 1900px;
+    background-repeat: no-repeat;
+    
+    font-family: Calibri, Helvetica, sans-serif;
+    }
+    h1 {
+    width:500px;
+    margin: 0 auto;
+    text-align: center;
+    color: orange;
+    }
+
+    h2 {
+    width:120px;
+    text-align: center;
+    display; block;
+    color: orange;
+    }
+    button {
+    background-color: grey;
+    color: orange;
+    border: none;
+    cursor: pointer;
+    margin: 0px 10px;
+    }
+    button:hover {
+    opacity: 0.7;
+    }
+    .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    
+    }
+    .container {
+    padding: 10px;
+    background-color: light blue;
+    opacity: 100%;
+    width: 2500px;
+    display: table;
+    margin: 5px 75px;
+    }
+
+    ul {
+      max-width: 1700px;
+      display: grid;
+      grid-template-columns: 100%;
+      padding-left: 0;
+      border: 1px solid teal;
+    }
+
+    li {
+      list-style: inside;
+      border: 1px dashed teal;
+      padding: 5px;
+      max-width: 1800px;
+      font-size:15px;
+      color: orange;
+    }
+
+  h1 QoE Blockchain Explorer
+  .center
+    h2 LEDGER
+button#myButton1(style='font-size:25px;' onclick="location.href = 'http://203.247.240.236:11800/api/queryallvideos';") View All Video Chunks
+button#myButton1(style='font-size:25px;' onclick="location.href = 'http://203.247.240.236:11800/api/create';") Add New Video Chunk
+
+.container
+    ul 
+     each item in list
+    
+        li="ChunkID:  " +item["Key"]+ "  <>  " + "  Request Time:  "  +item["Record"]["request_time"]+"  <>  " +" Create Time:  "  + item["Record"]["create_time"] +" <> " + " Chunk Hit Time:  "  + item["Record"]["chunkhit_time"] + " <> " + " Response Time:  " +item["Record"]["response_time"] + " <> "+" Invoke:  "  +item["Record"]["invoke"] +" <> " 
+
+
+
+
+
+
+
